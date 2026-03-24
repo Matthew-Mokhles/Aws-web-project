@@ -239,7 +239,7 @@
 				btn.disabled = true;
 				btn.value = 'Sending...';
 
-				fetch('api/contact.php', {
+				fetch('http://3.71.35.137/api/contact.php', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json' },
 					body: JSON.stringify({
