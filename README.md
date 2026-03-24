@@ -1,18 +1,56 @@
-## Glozzome
-This is a business promotional website of a company. It's a mulitpage website with minimum 5-7 section in every single page. The site is fully responsive and designed with HTML, CSS and Bootstrap. 
+# Aswan Newsletter 🌅
 
-## Demo
-- Live
-    - [Glozzome](https://mrhrifat.github.io/glozzome)
+A multi-page website showcasing the beauty, culture, history, and latest news from Aswan — Egypt's jewel on the Nile. Built with HTML, CSS, Bootstrap, UIkit, and a PHP/SQLite backend.
 
-## How To Contribute
-- Fork the repository.
-- Make your changes.
-- Commit your changes.
-- Create a pull request.
-- Wait for the pull request to be merged.
+## 📸 Pages
 
-**Note:** If you want to do a major changes than first create an Issue.
+- **Home** — Hero slider, latest news, photo gallery, newsletter subscription
+- **About Aswan** — History, culture, and highlights of the city
+- **Destinations** — Top places to visit in and around Aswan
+- **Articles** — Blog-style articles and stories
+- **Contact** — Contact form with backend integration
+- **Admin Dashboard** — Manage subscribers and contact messages
 
-## License
-This project is licensed under [GPL-3.0](https://github.com/mrhrifat/glozzome/blob/master/LICENSE.md).
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML5, CSS3, Bootstrap 4, UIkit, Font Awesome
+- **Backend:** PHP, SQLite
+- **Fonts:** Playfair Display, Roboto (Google Fonts)
+
+## 📁 Project Structure
+
+```
+├── index.html          # Home page
+├── about.html          # About Aswan
+├── services.html       # Destinations
+├── blog.html           # Articles
+├── contact.html        # Contact page
+├── admin.html          # Admin dashboard
+├── css/                # Stylesheets (Bootstrap, UIkit, custom)
+├── js/                 # Scripts (jQuery, Bootstrap, UIkit)
+├── img/                # Images and gallery photos
+├── api/                # PHP backend (subscribe, contact, admin, database)
+└── data/               # SQLite database
+```
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Matthew-Mokhles/Aws-web-project.git
+   ```
+2. Start a local PHP server:
+   ```bash
+   php -S localhost:8000
+   ```
+3. Open `http://localhost:8000` in your browser.
+
+## 👤 Author
+
+**Matthew Mokhles**
+- GitHub: [@Matthew-Mokhles](https://github.com/Matthew-Mokhles)
+- Email: Matthewmokhles@gmail.com
+
+## 📄 License
+
+This project is licensed under [GPL-3.0](LICENSE.md).
