@@ -183,7 +183,7 @@
 			e.preventDefault();
 			adminPassword = document.getElementById('admin-password').value;
 
-			fetch('http://3.71.35.137/api/admin.php?action=stats&password=' + encodeURIComponent(adminPassword))
+			fetch('http://3.74.147.236/api/admin.php?action=stats&password=' + encodeURIComponent(adminPassword))
 				.then(r => r.json())
 				.then(data => {
 					if (data.success) {
@@ -212,7 +212,7 @@
 			document.getElementById('stat-today').textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 
 			// Load subscribers
-			fetch('http://3.71.35.137/api/admin.php?action=subscribers&password=' + encodeURIComponent(adminPassword))
+			fetch('http://3.74.147.236/api/admin.php?action=subscribers&password=' + encodeURIComponent(adminPassword))
 				.then(r => r.json())
 				.then(data => {
 					if (data.success) {
@@ -238,7 +238,7 @@
 				});
 
 			// Load contacts
-			fetch('http://3.71.35.137/api/admin.php?action=contacts&password=' + encodeURIComponent(adminPassword))
+			fetch('http://3.74.147.236/api/admin.php?action=contacts&password=' + encodeURIComponent(adminPassword))
 				.then(r => r.json())
 				.then(data => {
 					if (data.success) {
@@ -270,7 +270,7 @@
 		// Delete subscriber
 		function deleteSub(id) {
 			if (!confirm('Are you sure you want to remove this subscriber?')) return;
-			fetch('http://3.71.35.137/api/admin.php?action=delete_subscriber&id=' + id + '&password=' + encodeURIComponent(adminPassword))
+			fetch('http://3.74.147.236/api/admin.php?action=delete_subscriber&id=' + id + '&password=' + encodeURIComponent(adminPassword))
 				.then(r => r.json())
 				.then(data => {
 					if (data.success) { showToast('Subscriber removed'); loadData(); }
@@ -281,7 +281,7 @@
 		// Delete contact
 		function deleteCon(id) {
 			if (!confirm('Are you sure you want to delete this message?')) return;
-			fetch('http://3.71.35.137/api/admin.php?action=delete_contact&id=' + id + '&password=' + encodeURIComponent(adminPassword))
+			fetch('http://3.74.147.236/api/admin.php?action=delete_contact&id=' + id + '&password=' + encodeURIComponent(adminPassword))
 				.then(r => r.json())
 				.then(data => {
 					if (data.success) { showToast('Message deleted'); loadData(); }
